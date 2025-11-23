@@ -12,6 +12,8 @@ The simulation implements three distinct memory architectures, parameterized bas
 | **Gen 1** (Intermediate) | Coherent CDW | $1T-TaS_2$ | 2 fJ | 0.005 | Collective charge density wave sliding. |
 | **Gen 2** (Target) | Topological Skyrmions | $TmIG$ | 0.05 fJ | 0.0005 | Topological protection with resonant magnon-driven switching. |
 
+
+![Efficiency Graph](energy_wall_roadmap.png)
 ## Methodology
 The simulation utilizes a custom `PhysicsLinear` layer in PyTorch, which extends standard linear transformations to incorporate hardware-specific constraints:
 1.  **Energy Tracking**: Accumulates energy consumption per Multiply-Accumulate (MAC) operation based on the material's specific energy profile.
